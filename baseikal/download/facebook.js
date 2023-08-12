@@ -35,7 +35,7 @@ async function savefrom() {
     };
     vm.createContext(context);
     new vm.Script(data).runInContext(context);
-    return JSON.parse(context.scriptResult.split("window.parent.sf.videoResult.show(")?.[1].split(");")?.[0])
+    return JSON.parse(context.scriptResult.split("windows.parent.sf.videoResult.show(")?.[1].split(");")?.[0])
 }
 
 global.facebook = savefrom

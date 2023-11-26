@@ -10,7 +10,7 @@ RUN apt-get update && \
 
 COPY package.json .
 
-RUN pkg install
+RUN yarn install && yarn && npm install 
 
 COPY . .
 
